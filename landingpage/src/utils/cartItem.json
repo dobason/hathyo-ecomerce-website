@@ -1,0 +1,84 @@
+{
+    "cart": [
+        {
+            "id": 1,
+            "name": "Viên uống Omega 3-6-9 NatureCare giảm nguy cơ xơ vữa động mạch",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 2,
+            "name": "Viên uống Đại Tràng Hải Thượng Vương Vesta hỗ trợ kiện tỳ vị, giảm triệt",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 3,
+            "name": "Viên uống Phế Khang Hải Thượng Vương Vesta hỗ trợ giảm đau",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 4,
+            "name": "Viên uống KenKan Nattokinase 2400FU tăng cường lưu thông",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 5,
+            "name": "Viên nang cứng Vương Nữ Khang Royal Care hỗ trợ hạn chế sự phát tri",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": false
+        },
+        {
+            "id": 6,
+            "name": "Viên nang cứng Xương Khớp Hải Thượng Vương hỗ trợ giảm nguy cơ đau nhứt xương khớp",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 7,
+            "name": "Viên uống B Complex Vitamin Royal Care hỗ trợ giảm mệt mỏi, căng thẳng",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 8,
+            "name": "Viên uống Kenkan Seishun Primrose cải thiện các triệu chứng",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": false
+        },
+        {
+            "id": 9,
+            "name": "Viên uống Kaki Ekisu Tohchukasou Kenkan hỗ trợ tăng cường sinh lý",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        },
+        {
+            "id": 10,
+            "name": "Viên uống Calci K-2 Pharma World hỗ trợ giảm nguy cơ loãng xương",
+            "imageUrl": "/product-cart.png",
+            "unitPrice": 100,
+            "quantity": 1,
+            "available": true
+        }
+    ]
+}

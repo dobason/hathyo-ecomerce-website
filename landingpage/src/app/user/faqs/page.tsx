@@ -1,0 +1,19 @@
+import StaticBanner from "@/components/StaticBanner";
+import Container from "@/containers/user/faqs/Container";
+import { Metadata } from "next";
+
+export default async function Page() {
+  // const { blocks, SEO } = homepageData;
+  return (
+    <main>
+      <StaticBanner />
+      <Container />
+    </main>
+  );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Hathyo.com - Câu hỏi thường gặp",
+  };
+}

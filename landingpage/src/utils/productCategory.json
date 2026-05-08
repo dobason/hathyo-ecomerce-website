@@ -1,0 +1,49 @@
+{
+    "category": [
+        {
+            "id": 0,
+            "name": "Hỗ trợ điều trị",
+            "icon": "treatment-records"
+        },
+        {
+            "id": 1,
+            "name": "Vitamin& khoáng chất",
+            "icon": "vitamin"
+        },
+        {
+            "id": 2,
+            "name": "Sinh lý nội tiết tố",
+            "icon": "hormon"
+        },
+        {
+            "id": 3,
+            "name": "Thần kinh não",
+            "icon": "brain"
+        },
+        {
+            "id": 4,
+            "name": "Hỗ trợ tiêu hoá",
+            "icon": "stomach"
+        },
+        {
+            "id": 5,
+            "name": "Hỗ trợ làm đẹp",
+            "icon": "beauty"
+        },
+        {
+            "id": 5,
+            "name": "Sức khoẻ tim mạch",
+            "icon": "heart"
+        },
+        {
+            "id": 5,
+            "name": "Dinh dưỡng",
+            "icon": "milk"
+        },
+        {
+            "id": 5,
+            "name": "Cải thiện tăng cường chức năng",
+            "icon": "protein"
+        }
+    ]
+}

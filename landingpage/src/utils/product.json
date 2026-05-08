@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "shopCategory": {
+      "id": 2,
+      "name": "test 2",
+      "slug": "test 2",
+      "parentId": null,
+      "childCategories": null
+  },
+  "productCode": "PL5nFLh",
+  "title": "test 1",
+  "rating": 5,
+  "countNumOfOrders": 0,
+  "price": 22322.00,
+  "anchoPrice": 22332.00,
+  "discountPercent": 50,
+  "shortDescription": "<p>test</p>",
+  "fullDescription": "<p>test</p>",
+  "brandName": "test ",
+  "unit": "đơn vị",
+  "placePfOrigin": null,
+  "childrenUnit": null,
+  "numberOfChildrenUnit": "0",
+  "mainImageUrl": "/logo.svg",
+  "otherImageUrls": [
+      "/logo.svg"
+  ]
+}

@@ -1,0 +1,68 @@
+[33md36e14a[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mFix/update-code[m[33m)[m Final banner
+[33m38b6bac[m[33m ([m[1;31morigin/Fix/update-code[m[33m)[m update code
+[33m1694d60[m[33m ([m[1;31morigin/Fix/flash-sale[m[33m, [m[1;32mFix/flash-sale[m[33m)[m Fix flash sale
+[33m2f84379[m[33m ([m[1;31morigin/update/sign-up-form[m[33m, [m[1;32mupdate/sign-up-form[m[33m)[m update sign up form
+[33m68758ee[m[33m ([m[1;31morigin/Fix/final-banner[m[33m, [m[1;32mFix/final-banner[m[33m)[m Update banner
+[33ma673916[m[33m ([m[1;32mupdate/final-banner[m[33m)[m Merge branch 'update/final-banner' into 'main'
+[33mb1274c8[m[33m ([m[1;31morigin/update/final-banner[m[33m)[m Fix card
+[33ma9a72b0[m Merge branch 'update/final-banner' into 'main'
+[33m681e6ac[m fix banner
+[33m734f4bb[m Merge branch 'Fix/update-banner' into 'main'
+[33m20ab57b[m[33m ([m[1;31morigin/Fix/update-banner[m[33m, [m[1;32mFix/update-banner[m[33m)[m Final banner
+[33mec99e51[m[33m ([m[1;32mmain[m[33m)[m ci: update pipeline config to fix amazon-linux-extras issue
+[33m6658e8c[m Merge branch 'update/banner' into 'main'
+[33mb880aae[m[33m ([m[1;31morigin/update/banner[m[33m, [m[1;32mupdate/banner[m[33m)[m fix bug build in git lab
+[33m2b2ce31[m Merge branch 'update/banner' into 'main'
+[33mdda918e[m Branding export banner & update flash sale
+[33m5a782f8[m Merge branch 'Fix/fix-bug-logo' into 'main'
+[33ma46f23d[m[33m ([m[1;31morigin/Fix/fix-bug-logo[m[33m, [m[1;32mFix/fix-bug-logo[m[33m)[m Fix bug logo
+[33m7166f75[m Merge branch 'update/usernotr' into 'main'
+[33m00c4e51[m[33m ([m[1;31morigin/update/usernotr[m[33m, [m[1;32mupdate/usernotr[m[33m)[m Update usernote and fixing product picture
+[33ma9388f2[m Merge branch 'Fix/final-fix-font' into 'main'
+[33md3e3917[m[33m ([m[1;31morigin/Fix/final-fix-font[m[33m, [m[1;32mFix/final-fix-font[m[33m)[m Final fix font
+[33md655312[m Merge branch 'Fix/fix-font-pơst' into 'main'
+[33m60ed076[m[33m ([m[1;31morigin/Fix/fix-font-pơst[m[33m, [m[1;32mFix/fix-font-pơst[m[33m)[m fix font in post
+[33m98a15b4[m Merge branch 'Fix/fix-order-history' into 'main'
+[33m94b70da[m[33m ([m[1;31morigin/Fix/fix-order-history[m[33m, [m[1;32mFix/fix-order-history[m[33m)[m fix in tab order history
+[33m3464b12[m Merge branch 'update/add-note' into 'main'
+[33m205a76a[m[33m ([m[1;31morigin/update/add-note[m[33m, [m[1;32mupdate/add-note[m[33m)[m Add note in order history
+[33mb1b75c3[m Merge branch 'Fix/logo-merchant' into 'main'
+[33m6e10a02[m[33m ([m[1;31morigin/Fix/logo-merchant[m[33m, [m[1;32mFix/logo-merchant[m[33m)[m Show logo in merchant
+[33m9685eb9[m Merge branch 'update/user-password' into 'main'
+[33m933586e[m[33m ([m[1;31morigin/update/user-password[m[33m, [m[1;32mupdate/user-password[m[33m)[m Update password
+[33m5bd6264[m[33m ([m[1;31morigin/update/final-coupon[m[33m, [m[1;32mupdate/final-coupon[m[33m)[m update coupon
+[33m4ca68ec[m Merge branch 'Fix/filter-product' into 'main'
+[33m42e6342[m[33m ([m[1;31morigin/Fix/filter-product[m[33m, [m[1;32mFix/filter-product[m[33m)[m Filter product in merchant
+[33m623c3e9[m Merge branch 'Fix/user-info' into 'main'
+[33maba52da[m[33m ([m[1;31morigin/Fix/user-info[m[33m, [m[1;32mFix/user-info[m[33m)[m Fix user info
+[33md8d125b[m Merge branch 'Fix/final-logo' into 'main'
+[33mf1a9022[m[33m ([m[1;31morigin/Fix/final-logo[m[33m, [m[1;32mFix/user-profile[m[33m, [m[1;32mFix/final-logo[m[33m)[m Fix logo and images
+[33me66dcd0[m Merge branch 'Fix/user-profile' into 'main'
+[33m57db574[m[33m ([m[1;31morigin/Fix/user-profile[m[33m, [m[1;32mFix/sizeLogo[m[33m)[m Fix user profile
+[33m74e77be[m Merge branch 'Fix/sizeLogo' into 'main'
+[33mb0cc3d5[m[33m ([m[1;31morigin/Fix/sizeLogo[m[33m, [m[1;32mFix/mainLogo[m[33m)[m fix size logo
+[33m5c9a889[m Merge branch 'Fix/mainLogo' into 'main'
+[33m85abb64[m[33m ([m[1;31morigin/Fix/mainLogo[m[33m, [m[1;32mFix/footer-logo[m[33m)[m fix header and footer logo
+[33m29a01ff[m Merge branch 'Fix/footer-logo' into 'main'
+[33mbb2e0f9[m[33m ([m[1;31morigin/Fix/footer-logo[m[33m, [m[1;32mFix/Logo[m[33m)[m fix logo
+[33m3cb55a9[m Merge branch 'main' of https://gitlab.com/hathyo1/landingpage into Fix/Logo
+[33mbad0d97[m Merge branch 'Fix/business-card' into 'main'
+[33m5c3537c[m[33m ([m[1;31morigin/Fix/business-card[m[33m)[m Fix business card
+[33m9aa4a0e[m Merge branch 'Fix/business-card' into 'main'
+[33m21238cd[m[33m ([m[1;32mFix/totalProduct[m[33m)[m Fix business card
+[33m73642da[m Merge branch 'Fix/totalProduct' into 'main'
+[33m1b8f41b[m[33m ([m[1;31morigin/Fix/totalProduct[m[33m, [m[1;32mupdate/coupon[m[33m)[m Fix total products in cart
+[33m375f9d7[m Merge branch 'update/coupon' into 'main'
+[33m300e97a[m Update coupon
+[33m8ead68e[m Merge branch 'update/coupon' into 'main'
+[33m4136a2f[m Fix: regenerate yarn.lock to resolve syntax error
+[33m34f12a6[m Fix yarn.lock conflict
+[33m6208508[m Merge branch 'update/coupon' into 'main'
+[33m4c7ad21[m Update coupon
+[33m06e205e[m[33m ([m[1;31morigin/Fix/Logo[m[33m)[m Update coupon
+[33mb197432[m Merge branch 'update/UserInfo' into 'main'
+[33m3ed28d6[m Merge branch 'Fix/Logo' into 'main'
+[33me896f35[m Fix logo
+[33m174c41d[m Merge branch 'Fix/Logo' into 'main'
+[33m83435e2[m[33m ([m[1;31morigin/update/Coupon[m[33m)[m Fix logo
+[33m855d6a1[m Merge branch 'update/Coupon' into 'main'

@@ -1,0 +1,52 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  AWS_ECR_REGION: $AWS_ECR_REGION
+  ECR_REGISTRY: $ECR_REGISTRY
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+  AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_DRIVER: overlay2
+  SSH_PRIVATE_KEY: $SSH_PRIVATE_KEY
+  SSH_USER: $SSH_USER
+  SSH_HOST: $SSH_HOST
+
+build:
+  stage: build
+  image: docker:24.0.2
+  services:
+    - docker:dind
+  before_script:
+    - apk add --no-cache python3 py3-pip curl jq bash
+    - pip3 install --no-cache-dir awscli
+    - aws --version
+    - docker --version
+  script:
+    - docker build -t hathyo-landingpage .
+    - docker tag hathyo-landingpage:latest $ECR_REGISTRY/hathyo-landingpage:latest
+    - aws ecr get-login-password --region $AWS_ECR_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY
+    - docker push $ECR_REGISTRY/hathyo-landingpage:latest
+  only:
+    - main
+  
+deploy:
+  stage: deploy
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache openssh-client bash
+    - echo "$SSH_PRIVATE_KEY" > hathyo-landingpage.pem
+    - chmod 600 hathyo-landingpage.pem
+  variables:
+    RELEASE_IMAGE: $ECR_REGISTRY/hathyo-landingpage:latest
+  script:
+    - ssh -i "hathyo-landingpage.pem" -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "aws ecr get-login-password --region $AWS_ECR_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY"
+    - ssh -i "hathyo-landingpage.pem" -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "docker pull $RELEASE_IMAGE && docker rm -f hathyo-landingpage"
+    - ssh -i "hathyo-landingpage.pem" -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "docker run -d -p 3000:3000 --restart unless-stopped --name hathyo-landingpage $RELEASE_IMAGE"
+    - ssh -i "hathyo-landingpage.pem" -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "docker container prune -f && docker image prune -f"
+  only:
+    - main
+  when: manual
