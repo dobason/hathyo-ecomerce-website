@@ -1,0 +1,54 @@
+cache:
+  paths:
+    - node_module/
+    - .yarn
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:20
+  stage: build
+  script:
+    - yarn config set cache-folder .yarn
+    - yarn install --pure-lockfile --cache-folder.yarn
+    - yarn build
+  artifacts:
+    paths:
+      - $CI_PROJECT_DIR/dist
+    expire_in: 1 hour
+  only:
+    - main
+
+deploy:
+  image: python:latest
+  stage: deploy
+  variables:
+    AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+    S3_BUCKET_NAME_1: $S3_BUCKET_NAME_1
+    S3_BUCKET_NAME_2: $S3_BUCKET_NAME_2
+    CLOUDFRONT_DISTRIBUTION_ID_1: $CLOUDFRONT_DISTRIBUTION_ID_1
+    CLOUDFRONT_DISTRIBUTION_ID_2: $CLOUDFRONT_DISTRIBUTION_ID_2
+  script:
+    - pip install awscli
+
+    # Empty S3 Bucket 1
+    - echo "Uploading to s3://$S3_BUCKET_NAME_1"
+    - aws s3 rm s3://$S3_BUCKET_NAME_1 --recursive
+    - aws s3 cp $CI_PROJECT_DIR/dist/ s3://$S3_BUCKET_NAME_1/ --recursive
+
+    # Empty S3 Bucket 2
+    - echo "Uploading to s3://$S3_BUCKET_NAME_2"
+    - aws s3 rm s3://$S3_BUCKET_NAME_2 --recursive
+    - aws s3 cp $CI_PROJECT_DIR/dist/ s3://$S3_BUCKET_NAME_2/ --recursive
+    
+    # Clear CloudFront Cache 1
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_1 --paths '/*'
+
+    # Clear CloudFront Cache 2
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_2 --paths '/*'
+  only:
+    - main
+  when: manual
